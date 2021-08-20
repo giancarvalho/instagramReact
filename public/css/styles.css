@@ -1,0 +1,407 @@
+/* estilos globais pagina inicial */
+
+* {
+  box-sizing: border-box;
+}
+.website {
+  margin-top: 54px;
+  font-family: "Roboto", sans-serif;
+  background-color: #fafafa;
+  color: #262626;
+}
+a {
+  text-decoration: none;
+}
+
+ion-icon {
+  font-size: 25px;
+  color: #262626;
+  pointer-events: none;
+}
+
+.negrito {
+  font-weight: 500;
+}
+
+.light {
+  font-weight: 300;
+}
+
+/* estilo direções: x = eixo x, y = eixo y */
+.f {
+  display: flex;
+}
+
+.coluna {
+  flex-direction: column;
+}
+
+.xy-center {
+  align-items: center;
+  justify-content: center;
+}
+
+.y-center {
+  align-items: center;
+}
+
+.x-between {
+  justify-content: space-between;
+}
+
+/* estilos do topo */
+
+.topo {
+  width: 100vw;
+  position: fixed;
+  top: 0;
+  background-color: #ffffff;
+  border-bottom: 1px solid #e6e6e6;
+  z-index: 100;
+}
+.nav {
+  width: 935px;
+  height: 54px;
+  margin: 0 auto;
+}
+
+.divisor-logo {
+  height: 22px;
+  border-right: 1px solid #dbdbdb;
+  padding-right: 10px;
+  margin-right: 10px;
+}
+
+.pesquisar {
+  width: 215px;
+  height: 28px;
+  background-color: #ffffff;
+  border: 1px solid #dbdbdb;
+  border-radius: 3px;
+  color: #979797;
+}
+
+.icones > a {
+  margin: 10px;
+}
+
+/* inicio conteudo pagina */
+.conteudo {
+  max-width: 935px;
+  margin: 0 auto;
+  padding-top: 38px;
+}
+
+.stories {
+  height: 118px;
+  width: 614px;
+  background-color: #ffffff;
+  margin-bottom: 24px;
+  padding-left: 23px;
+  border: 1px solid #dbdbdb;
+  box-shadow: 0px 0px 2px #e6e6e6;
+  overflow-x: hidden;
+  position: relative;
+}
+
+.stories > ion-icon {
+  position: absolute;
+  font-size: 26px;
+  color: #ffffff;
+  z-index: 10;
+  right: 5px;
+}
+
+.perfil-stories {
+  height: 100%;
+  font-size: 12px;
+  margin-right: 13px;
+}
+
+.stories-background {
+  position: relative;
+  text-align: center;
+}
+
+.stories-background p {
+  text-overflow: ellipsis;
+  white-space: nowrap;
+  overflow: hidden;
+  width: 65px;
+}
+
+.stories-background img {
+  height: 66px;
+  width: 66px;
+  margin-bottom: 3px;
+  border-radius: 50%;
+}
+
+.foto-stories {
+  position: absolute;
+  top: 5px;
+  right: 5px;
+}
+
+.foto-stories img {
+  height: 56px;
+  width: 56px;
+  border-radius: 50%;
+  background-size: cover;
+}
+
+/* estilos perfil */
+
+.nome-perfil {
+  font-size: 14px;
+}
+.nome-perfil :first-child {
+  font-weight: 500;
+}
+
+.nome-perfil :nth-child(2) {
+  color: #bebebe;
+  margin-top: 8px;
+}
+
+.perfil img {
+  border-radius: 50%;
+  height: 32px;
+  width: 32px;
+}
+
+/* estilos post */
+
+.post {
+  width: 614px;
+  background-color: white;
+  border: 1px solid #dbdbdb;
+  box-shadow: 0px 0px 2px #e6e6e6;
+  margin-bottom: 60px;
+}
+
+.topo-post {
+  width: 100%;
+  height: 60px;
+}
+
+.topo-post > div {
+  padding: 17px;
+}
+
+.fundo-post {
+  padding: 13px;
+}
+
+.fundo-post ion-icon {
+  margin: 0px 6px;
+}
+
+.curtidas {
+  margin-top: 10px;
+}
+
+.curtidas > img {
+  width: 20px;
+  height: 20px;
+  margin: 5px;
+  border-radius: 50%;
+}
+
+.comentarios {
+  margin-top: 10px;
+}
+.comentarios p {
+  margin: 5px;
+}
+
+.comentario ion-icon {
+  font-size: 20px;
+}
+
+.inserir-comentario {
+  padding: 13px;
+  border-top: 1px solid #dbdbdb;
+}
+
+.inserir-comentario input {
+  width: 100%;
+  border: none;
+  padding: 0px 10px;
+  font-size: 14px;
+}
+
+.inserir-comentario input:focus {
+  outline: none;
+}
+
+.inserir-comentario button {
+  border: none;
+  background-color: transparent;
+  color: #b2dffc;
+  transition: color 300ms;
+  cursor: pointer;
+}
+
+.inserir-comentario button:hover {
+  color: #0095f6;
+}
+
+/* estilo sidebar */
+.container-sidebar {
+  display: unset;
+}
+
+.sidebar {
+  width: 300px;
+  top: 92px;
+  position: sticky;
+}
+
+.sidebar > .perfil {
+  padding: 20px 0px;
+}
+
+.sidebar > .perfil img {
+  height: 56px;
+  width: 56px;
+}
+.perfil p {
+  margin-left: 8px;
+}
+
+.sugestoes-topo {
+  font-size: 12px;
+}
+
+.sugestoes-topo :first-child {
+  color: #bebebe;
+}
+
+.sugestoes-perfil {
+  margin: 18px 0px;
+}
+
+.perfil-sugerido {
+  margin-bottom: 16px;
+}
+
+.perfil-sugerido button {
+  background-color: transparent;
+  border: none;
+  color: #139ef2;
+  font-weight: 550;
+  cursor: pointer;
+}
+
+.sobre p {
+  color: #c7c7c7;
+  margin-bottom: 20px;
+  font-size: 12px;
+}
+
+.barra-mobile {
+  display: none;
+}
+
+/* adaptação desktop 935px de largura */
+@media (max-width: 935px) {
+  .nav {
+    width: 100%;
+    padding: 0px 20px;
+  }
+
+  .conteudo {
+    justify-content: center;
+    width: 100vw;
+  }
+  .container-sidebar {
+    display: none;
+  }
+}
+
+/* adaptação para mobile */
+@media (max-width: 614px) {
+  .logo-principal img {
+    align-self: center;
+  }
+
+  .divisor-logo {
+    border: none;
+    padding: 0px;
+    margin: 0px;
+  }
+
+  .pesquisar {
+    display: none;
+  }
+
+  .nav .icones a:first-child {
+    margin: 0px;
+  }
+
+  .nav .icones a:nth-child(2),
+  .nav .icones a:nth-child(3),
+  .nav .icones a:nth-child(4) {
+    display: none;
+  }
+
+  .conteudo {
+    width: 100vw;
+    padding-top: 0;
+    padding-bottom: 8vh;
+  }
+
+  .feed {
+    width: 100%;
+  }
+
+  .stories {
+    height: 118px;
+    width: 100%;
+    background-color: transparent;
+    border: none;
+    box-shadow: none;
+    margin-bottom: 0px;
+    overflow-x: scroll;
+  }
+
+  .stories::-webkit-scrollbar {
+    display: none;
+  }
+
+  .stories > ion-icon {
+    display: none;
+  }
+
+  .post {
+    width: 100%;
+  }
+
+  .barra-mobile {
+    display: initial;
+  }
+
+  .barra-mobile .icones {
+    position: fixed;
+    bottom: 0;
+    left: 0;
+    z-index: 100;
+    height: 8vh;
+    width: 100%;
+    background-color: #ffffff;
+    border-top: 1px solid #dbdbdb;
+  }
+
+  .logo-principal {
+    width: 100%;
+  }
+
+  .logo-principal > a {
+    width: 100%;
+  }
+
+  .logo-principal img {
+    margin: 0 auto;
+  }
+}
