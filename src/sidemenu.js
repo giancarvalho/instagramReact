@@ -1,79 +1,46 @@
+const CURRENT_USER = {
+  name: "cebolinha",
+  image: "catanacomics.svg",
+  description: "Perfil Oficial",
+};
+const PROFILES = [
+  { name: "bad.vibes.memes", image: "bad.vibes.memes.svg" },
+  { name: "chibirdart", image: "chibirdart.svg" },
+  { name: "razoesparaacreditar", image: "razoesparaacreditar.svg" },
+  { name: "adorable_animals", image: "adorable_animals.svg" },
+  { name: "smallcutecats", image: "smallcutecats.svg" },
+];
+
 function CurrrentUser() {
   return (
     <div class="usuario">
-      <img src="assets/img/catanacomics.svg" />
+      <img src={`assets/img/${CURRENT_USER.image}`} />
       <div class="texto">
-        <strong>catanacomics</strong>
-        Catana
+        <strong>{CURRENT_USER.name}</strong>
+        {CURRENT_USER.description}
       </div>
     </div>
   );
 }
 
-function Suggestions() {
+function Suggestion(profile) {
   return (
-    <div>
-      <div class="sugestao">
-        <div class="usuario">
-          <img src="assets/img/bad.vibes.memes.svg" />
-          <div class="texto">
-            <div class="nome">bad.vibes.memes</div>
-            <div class="razao">Segue você</div>
-          </div>
+    <div class="sugestao">
+      <div class="usuario">
+        <img src={`assets/img/${profile.image}`} />
+        <div class="texto">
+          <div class="nome">{profile.name}</div>
+          <div class="razao">Segue você</div>
         </div>
-
-        <div class="seguir">Seguir</div>
       </div>
 
-      <div class="sugestao">
-        <div class="usuario">
-          <img src="assets/img/chibirdart.svg" />
-          <div class="texto">
-            <div class="nome">chibirdart</div>
-            <div class="razao">Segue você</div>
-          </div>
-        </div>
-
-        <div class="seguir">Seguir</div>
-      </div>
-
-      <div class="sugestao">
-        <div class="usuario">
-          <img src="assets/img/razoesparaacreditar.svg" />
-          <div class="texto">
-            <div class="nome">razoesparaacreditar</div>
-            <div class="razao">Novo no Instagram</div>
-          </div>
-        </div>
-
-        <div class="seguir">Seguir</div>
-      </div>
-
-      <div class="sugestao">
-        <div class="usuario">
-          <img src="assets/img/adorable_animals.svg" />
-          <div class="texto">
-            <div class="nome">adorable_animals</div>
-            <div class="razao">Segue você</div>
-          </div>
-        </div>
-
-        <div class="seguir">Seguir</div>
-      </div>
-
-      <div class="sugestao">
-        <div class="usuario">
-          <img src="assets/img/smallcutecats.svg" />
-          <div class="texto">
-            <div class="nome">smallcutecats</div>
-            <div class="razao">Segue você</div>
-          </div>
-        </div>
-
-        <div class="seguir">Seguir</div>
-      </div>
+      <div class="seguir">Seguir</div>
     </div>
   );
+}
+
+function Suggestions() {
+  return <div>{PROFILES.map((profile) => Suggestion(profile))}</div>;
 }
 
 function Links() {
@@ -100,6 +67,8 @@ export default function Sidemenu() {
           <div>Ver tudo</div>
         </div>
         <Suggestions />
+        <Links />
+        <Copyright />
       </div>
     </div>
   );

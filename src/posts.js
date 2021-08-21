@@ -1,9 +1,18 @@
-import Post from "./post.js";
+import RenderPost from "./post.js";
+
+const POSTS = [
+  {
+    user: { name: "meowed", image: "meowed.svg" },
+    content: "gato-telefone.svg",
+    likes: { contact: "respondeai", number: "101.523" },
+  },
+  {
+    user: { name: "meowed", image: "meowed.svg" },
+    content: "gato-telefone.svg",
+    likes: { contact: "respondeai", number: "101.523" },
+  },
+];
 
 export default function Posts() {
-  return (
-    <div class="posts">
-      <Post />
-    </div>
-  );
+  return <div class="posts">{POSTS.map((post) => RenderPost(post))}</div>;
 }

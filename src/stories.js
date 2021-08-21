@@ -1,4 +1,4 @@
-let perfilStories = [
+let PERFIL_STORIES = [
   { name: "9gag", image: `9gag.svg` },
   { name: "meowed", image: `adorable_animals.svg` },
   { name: "eu_nvr", image: `bad.vibes.memes.svg` },
@@ -24,7 +24,7 @@ export default function Stories() {
   return (
     <div class="stories">
       <ion-icon name="chevron-forward-circle"></ion-icon>
-      {perfilStories.map((perfil) => renderStories(perfil))}
+      {PERFIL_STORIES.map((perfil) => renderStories(perfil))}
       <div class="setinha">
         <ion-icon name="chevron-forward-circle"></ion-icon>
       </div>

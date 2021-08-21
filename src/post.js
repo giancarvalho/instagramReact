@@ -1,9 +1,9 @@
-function Top() {
+function Top(props) {
   return (
     <div class="topo">
       <div class="usuario">
-        <img src="assets/img/meowed.svg" />
-        meowed
+        <img src={`assets/img/${props.user.image}`} />
+        {props.user.name}
       </div>
       <div class="acoes">
         <ion-icon name="ellipsis-horizontal"></ion-icon>
@@ -12,15 +12,15 @@ function Top() {
   );
 }
 
-function Content() {
+function Content(props) {
   return (
     <div class="conteudo">
-      <img src="assets/img/gato-telefone.svg" />
+      <img src={`assets/img/${props.content}`} />
     </div>
   );
 }
 
-function Bottom() {
+function Bottom(props) {
   return (
     <div class="fundo">
       <div class="acoes">
@@ -33,29 +33,29 @@ function Bottom() {
           <ion-icon name="bookmark-outline"></ion-icon>
         </div>
       </div>
-      <Likes />
+      <Likes likes={props.likes} />
     </div>
   );
 }
 
-function Likes() {
+function Likes(props) {
   return (
     <div class="curtidas">
       <img src="assets/img/respondeai.svg" />
       <div class="texto">
-        Curtido por <strong>respondeai</strong> e{" "}
-        <strong>outras 101.523 pessoas</strong>
+        Curtido por <strong>{props.likes.contact}</strong> e{" "}
+        <strong>outras {props.likes.number}pessoas</strong>
       </div>
     </div>
   );
 }
 
-export default function RenderPost() {
+export default function RenderPost(post) {
   return (
     <div class="post">
-      <Top />
-      <Content />
-      <Bottom />
+      <Top user={post.user} />
+      <Content content={post.content} />
+      <Bottom likes={post.likes} />
     </div>
   );
 }
