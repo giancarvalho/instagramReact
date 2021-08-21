@@ -1,5 +1,5 @@
-import Feed from "./feed.js";
-import Sidemenu from "./sidemenu.js";
+import Feed from "./feed";
+import Sidemenu from "./sidemenu";
 
 export default function Content() {
   return (

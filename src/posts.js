@@ -1,4 +1,4 @@
-import RenderPost from "./post.js";
+import RenderPost from "./post";
 
 const POSTS = [
   {
