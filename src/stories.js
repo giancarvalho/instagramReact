@@ -1,22 +1,22 @@
 let perfilStories = [
-  { name: "9gag", image: `9gag.jpg` },
-  { name: "dndmemes", image: `dnd.png` },
-  { name: "eu_nvr", image: `eu_nvr.jpg` },
-  { name: "latestagecapitalism", image: `latestage.png` },
-  { name: "dankmemes", image: `communityIcon_br9hnpio2n271.jpg` },
-  { name: "oddlysatisfying", image: `satisfied.png` },
-  { name: "respondeai", image: `respondeai.png` },
-  { name: "farialimabets", image: `faria.png` },
+  { name: "9gag", image: `9gag.svg` },
+  { name: "meowed", image: `adorable_animals.svg` },
+  { name: "eu_nvr", image: `bad.vibes.memes.svg` },
+  { name: "latestagecapitalism", image: `barked.svg` },
+  { name: "dankmemes", image: `catanacomics.svg` },
+  { name: "oddlysatisfying", image: `dog.svg` },
+  { name: "respondeai", image: `filomoderna.svg` },
+  { name: "farialimabets", image: `meowed.svg` },
 ];
 
 function renderStories(perfil) {
   return (
-    <li class="story">
+    <div class="story">
       <div class="imagem">
-        <img src={`assets/${perfil.image}`} />
+        <img src={`assets/img/${perfil.image}`} />
       </div>
       <div class="usuario">{perfil.name}</div>
-    </li>
+    </div>
   );
 }
 
@@ -24,7 +24,7 @@ export default function Stories() {
   return (
     <div class="stories">
       <ion-icon name="chevron-forward-circle"></ion-icon>
-      <ul>{perfilStories.map((perfil) => renderStories(perfil))}</ul>
+      {perfilStories.map((perfil) => renderStories(perfil))}
       <div class="setinha">
         <ion-icon name="chevron-forward-circle"></ion-icon>
       </div>

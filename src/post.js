@@ -33,6 +33,7 @@ function Bottom() {
           <ion-icon name="bookmark-outline"></ion-icon>
         </div>
       </div>
+      <Likes />
     </div>
   );
 }
@@ -52,10 +53,9 @@ function Likes() {
 export default function RenderPost() {
   return (
     <div class="post">
-      <Topo />
+      <Top />
       <Content />
       <Bottom />
-      <Likes />
     </div>
   );
 }

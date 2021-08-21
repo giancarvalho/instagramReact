@@ -11,6 +11,10 @@ body {
   font-size: 14px;
 }
 
+strong {
+  font-weight: bold;
+}
+
 .navbar {
   width: 100%;
   display: flex;
