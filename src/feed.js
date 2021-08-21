@@ -4,7 +4,7 @@ import Stories from "./stories";
 
 export default function Feed() {
   return (
-    <div class="feed f coluna">
+    <div class="esquerda">
       <Stories />
       <Posts />
     </div>

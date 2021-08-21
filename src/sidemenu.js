@@ -1,124 +1,105 @@
-function CurrentUser() {
+function CurrrentUser() {
   return (
-    <div class="perfil f y-center">
-      <a href="#">
-        {" "}
-        <img src="assets/cebolinha.jpg" />
-      </a>
-      <div class="nome-perfil">
-        <p>cebolinha</p>
-        <p class="light">pelfil oficial</p>
+    <div class="usuario">
+      <img src="assets/img/catanacomics.svg" />
+      <div class="texto">
+        <strong>catanacomics</strong>
+        Catana
       </div>
     </div>
   );
 }
 
-function ProfileSuggestions() {
+function Suggestions() {
   return (
-    <div class="sugestoes-perfil">
-      <div class="perfil-sugerido f y-center x-between">
-        <div class="perfil f y-center">
-          <a href="#">
-            <img src="assets/communityIcon_br9hnpio2n271.jpg" />
-          </a>
-          <div class="nome-perfil">
-            <p>dankmemes</p>
-            <p>Segue você</p>
+    <div>
+      <div class="sugestao">
+        <div class="usuario">
+          <img src="assets/img/bad.vibes.memes.svg" />
+          <div class="texto">
+            <div class="nome">bad.vibes.memes</div>
+            <div class="razao">Segue você</div>
           </div>
         </div>
-        <div>
-          <button type="button">Seguir</button>
-        </div>
+
+        <div class="seguir">Seguir</div>
       </div>
-      <div class="perfil-sugerido f y-center x-between">
-        <div class="perfil f y-center">
-          <a href="#">
-            {" "}
-            <img src="assets/dnd.png" />
-          </a>
-          <div class="nome-perfil">
-            <p>dndmemes</p>
-            <p>Segue você</p>
+
+      <div class="sugestao">
+        <div class="usuario">
+          <img src="assets/img/chibirdart.svg" />
+          <div class="texto">
+            <div class="nome">chibirdart</div>
+            <div class="razao">Segue você</div>
           </div>
         </div>
-        <div>
-          <button type="button">Seguir</button>
-        </div>
+
+        <div class="seguir">Seguir</div>
       </div>
-      <div class="perfil-sugerido f y-center x-between">
-        <div class="perfil f y-center">
-          <a href="#">
-            {" "}
-            <img src="assets/brasil.png" />
-          </a>
-          <div class="nome-perfil">
-            <p>brasil</p>
-            <p>Novo no Instagram</p>
+
+      <div class="sugestao">
+        <div class="usuario">
+          <img src="assets/img/razoesparaacreditar.svg" />
+          <div class="texto">
+            <div class="nome">razoesparaacreditar</div>
+            <div class="razao">Novo no Instagram</div>
           </div>
         </div>
-        <div>
-          <button type="button">Seguir</button>
-        </div>
+
+        <div class="seguir">Seguir</div>
       </div>
-      <div class="perfil-sugerido f y-center x-between">
-        <div class="perfil f y-center">
-          <a href="#">
-            {" "}
-            <img src="assets/faria.png" />
-          </a>
-          <div class="nome-perfil">
-            <p>farialimabets</p>
-            <p>Segue você</p>
+
+      <div class="sugestao">
+        <div class="usuario">
+          <img src="assets/img/adorable_animals.svg" />
+          <div class="texto">
+            <div class="nome">adorable_animals</div>
+            <div class="razao">Segue você</div>
           </div>
         </div>
-        <div>
-          <button type="button">Seguir</button>
-        </div>
+
+        <div class="seguir">Seguir</div>
       </div>
-      <div class="perfil-sugerido f y-center x-between">
-        <div class="perfil f y-center">
-          <a href="#">
-            {" "}
-            <img src="assets/respondeai.png" />
-          </a>
-          <div class="nome-perfil">
-            <p>respondeai</p>
-            <p>Segue você</p>
+
+      <div class="sugestao">
+        <div class="usuario">
+          <img src="assets/img/smallcutecats.svg" />
+          <div class="texto">
+            <div class="nome">smallcutecats</div>
+            <div class="razao">Segue você</div>
           </div>
         </div>
-        <div>
-          <button type="button">Seguir</button>
-        </div>
+
+        <div class="seguir">Seguir</div>
       </div>
     </div>
   );
 }
 
-function About() {
+function Links() {
   return (
-    <div class="sobre">
-      <p>
-        Sobre • Ajuda • Imprensa • API • Carreiras • Privacidade • Termos •
-        Localizações • Contas mais relevantes • Hashtags • Idioma
-      </p>
-      <p>© 2021 INSTAGRAM DO FACEBOOK</p>
+    <div class="links">
+      Sobre • Ajuda • Imprensa • API • Carreiras • Privacidade • Termos •
+      Localizações • Contas mais relevantes • Hashtags • Idioma
     </div>
   );
+}
+
+function Copyright() {
+  return <div class="copyright">© 2021 INSTAGRAM DO FACEBOOK</div>;
 }
 
 export default function Sidemenu() {
   return (
-    <div class="container-sidebar">
-      <div class="sidebar">
-        <CurrentUser />
-        <div>
-          <div class="sugestoes-topo negrito f x-between">
-            <p>Sugestões para você</p>
-            <p>Ver tudo</p>
-          </div>
-          <ProfileSuggestions />
-          <About />
+    <div class="sidebar">
+      <CurrrentUser />
+
+      <div class="sugestoes">
+        <div class="titulo">
+          Sugestões para você
+          <div>Ver tudo</div>
         </div>
+        <Suggestions />
       </div>
     </div>
   );

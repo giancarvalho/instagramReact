@@ -11,27 +11,23 @@ let perfilStories = [
 
 function renderStories(perfil) {
   return (
-    <div class="stories-background">
-      <img src="assets/stories_background.jpg" />
-      <div class="foto-stories">
-        <a href="#">
-          <img src={`assets/${perfil.image}`} />
-        </a>
+    <li class="story">
+      <div class="imagem">
+        <img src={`assets/${perfil.image}`} />
       </div>
-      <p>{perfil.name}</p>
-    </div>
+      <div class="usuario">{perfil.name}</div>
+    </li>
   );
 }
 
 export default function Stories() {
   return (
-    <div class="stories f y-center">
+    <div class="stories">
       <ion-icon name="chevron-forward-circle"></ion-icon>
-      <ul class="f y-center">
-        {perfilStories.map((perfil) => (
-          <li class="perfil-stories f y-center">{renderStories(perfil)}</li>
-        ))}
-      </ul>
+      <ul>{perfilStories.map((perfil) => renderStories(perfil))}</ul>
+      <div class="setinha">
+        <ion-icon name="chevron-forward-circle"></ion-icon>
+      </div>
     </div>
   );
 }

@@ -1,76 +1,61 @@
 function Top() {
   return (
-    <div class="topo-post f x-between">
-      <div class="perfil f y-center">
-        <a href="#">
-          {" "}
-          <img src="assets/9gag.jpg" />
-        </a>
-        <div class="nome-perfil">
-          <p>9gag</p>
-        </div>
+    <div class="topo">
+      <div class="usuario">
+        <img src="assets/img/meowed.svg" />
+        meowed
       </div>
-      <div>
+      <div class="acoes">
         <ion-icon name="ellipsis-horizontal"></ion-icon>
       </div>
     </div>
   );
 }
 
-function Bottom() {
+function Content() {
   return (
-    <div class="fundo-post f coluna">
-      <div class="f x-between">
-        <div>
-          <a href="">
-            {" "}
-            <ion-icon name="heart-outline"></ion-icon>
-          </a>
-          <a href="#">
-            <ion-icon name="chatbubble-outline"></ion-icon>
-          </a>
-          <a href="#">
-            <ion-icon name="paper-plane-outline"></ion-icon>
-          </a>
-        </div>
-        <a href="#">
-          <div>
-            <ion-icon name="bookmark-outline"></ion-icon>
-          </div>
-        </a>
-      </div>
-      <div class="curtidas f y-center">
-        <img src="assets/respondeai.png" alt="" />
-        <p>
-          Curtido por <span class="negrito">respondeai</span> e
-          <span class="negrito">outras 101.523 pessoas</span>
-        </p>
-      </div>
-      <div class="comentarios"></div>
+    <div class="conteudo">
+      <img src="assets/img/gato-telefone.svg" />
     </div>
   );
 }
 
-function InsertComment() {
+function Bottom() {
   return (
-    <div class="inserir-comentario f y-center">
-      <a href="#">
-        <ion-icon name="happy-outline"></ion-icon>
-      </a>
-      <input type="text" placeholder="Escreva um comentário..." />
-      <button type="button">Postar</button>
+    <div class="fundo">
+      <div class="acoes">
+        <div>
+          <ion-icon name="heart-outline"></ion-icon>
+          <ion-icon name="chatbubble-outline"></ion-icon>
+          <ion-icon name="paper-plane-outline"></ion-icon>
+        </div>
+        <div>
+          <ion-icon name="bookmark-outline"></ion-icon>
+        </div>
+      </div>
+    </div>
+  );
+}
+
+function Likes() {
+  return (
+    <div class="curtidas">
+      <img src="assets/img/respondeai.svg" />
+      <div class="texto">
+        Curtido por <strong>respondeai</strong> e{" "}
+        <strong>outras 101.523 pessoas</strong>
+      </div>
     </div>
   );
 }
 
 export default function RenderPost() {
   return (
-    <div class="post f coluna">
-      <Top />
-      {/* conteudo do post */}
-      <img src="assets/nuvem.jpeg" class="imagem-post" />
+    <div class="post">
+      <Topo />
+      <Content />
       <Bottom />
-      <InsertComment />
+      <Likes />
     </div>
   );
 }
