@@ -41,10 +41,10 @@ function Bottom(props) {
 function Likes(props) {
   return (
     <div class="curtidas">
-      <img src="assets/img/respondeai.svg" />
+      <img src={`assets/img/${props.likes.image}`} />
       <div class="texto">
         Curtido por <strong>{props.likes.contact}</strong> e{" "}
-        <strong>outras {props.likes.number}pessoas</strong>
+        <strong>outras {props.likes.number} pessoas</strong>
       </div>
     </div>
   );

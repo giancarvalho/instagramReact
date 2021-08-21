@@ -1,6 +1,6 @@
 const CURRENT_USER = {
   name: "cebolinha",
-  image: "catanacomics.svg",
+  image: "cebolinha.jpg",
   description: "Perfil Oficial",
 };
 

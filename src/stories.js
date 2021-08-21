@@ -1,12 +1,12 @@
 let PERFIL_STORIES = [
   { name: "9gag", image: `9gag.svg` },
-  { name: "meowed", image: `adorable_animals.svg` },
-  { name: "eu_nvr", image: `bad.vibes.memes.svg` },
-  { name: "latestagecapitalism", image: `barked.svg` },
-  { name: "dankmemes", image: `catanacomics.svg` },
-  { name: "oddlysatisfying", image: `dog.svg` },
-  { name: "respondeai", image: `filomoderna.svg` },
-  { name: "farialimabets", image: `meowed.svg` },
+  { name: "adorable_animals", image: `adorable_animals.svg` },
+  { name: "bad.vibes.memes", image: `bad.vibes.memes.svg` },
+  { name: "barked", image: `barked.svg` },
+  { name: "catanacomics", image: `catanacomics.svg` },
+  { name: "dog", image: `dog.svg` },
+  { name: "filomoderna", image: `filomoderna.svg` },
+  { name: "meowed", image: `meowed.svg` },
 ];
 
 function renderStories(perfil) {
