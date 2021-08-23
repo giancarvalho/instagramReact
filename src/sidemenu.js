@@ -1,6 +1,7 @@
 import CurrrentUser from "./user";
 import Suggestions from "./suggestions";
 
+//creates the links to information about Instagram
 function Links() {
   return (
     <div class="links">
@@ -10,10 +11,12 @@ function Links() {
   );
 }
 
+//creates copyright notice
 function Copyright() {
   return <div class="copyright">© 2021 INSTAGRAM DO FACEBOOK</div>;
 }
 
+//generates sidemenu -- desktop version only
 export default function Sidemenu() {
   return (
     <div class="sidebar">

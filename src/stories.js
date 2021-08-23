@@ -1,3 +1,4 @@
+//list of stories to be rendered
 let PERFIL_STORIES = [
   { name: "9gag", image: `9gag.svg` },
   { name: "adorable_animals", image: `adorable_animals.svg` },
@@ -9,7 +10,8 @@ let PERFIL_STORIES = [
   { name: "meowed", image: `meowed.svg` },
 ];
 
-function renderStories(perfil) {
+//render each story
+function renderStory(perfil) {
   return (
     <div class="story">
       <div class="imagem">
@@ -20,11 +22,12 @@ function renderStories(perfil) {
   );
 }
 
+//generates stories section
 export default function Stories() {
   return (
     <div class="stories">
       <ion-icon name="chevron-forward-circle"></ion-icon>
-      {PERFIL_STORIES.map((perfil) => renderStories(perfil))}
+      {PERFIL_STORIES.map((perfil) => renderStory(perfil))}
       <div class="setinha">
         <ion-icon name="chevron-forward-circle"></ion-icon>
       </div>

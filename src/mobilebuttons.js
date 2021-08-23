@@ -1,3 +1,4 @@
+// bottom bar`s icons -- mobile version
 export default function MobileButtons() {
   return (
     <div class="fundo-mobile">

@@ -1,3 +1,4 @@
+//creates the topbar part of post
 function Top(props) {
   return (
     <div class="topo">
@@ -12,6 +13,7 @@ function Top(props) {
   );
 }
 
+//creates the content of post
 function Content(props) {
   return (
     <div class="conteudo">
@@ -20,6 +22,7 @@ function Content(props) {
   );
 }
 
+//creates bottom part of post
 function Bottom(props) {
   return (
     <div class="fundo">
@@ -38,6 +41,7 @@ function Bottom(props) {
   );
 }
 
+//creates the likes section - who and how many liked the post
 function Likes(props) {
   return (
     <div class="curtidas">
@@ -50,6 +54,7 @@ function Likes(props) {
   );
 }
 
+//render each post on homepage
 export default function RenderPost(post) {
   return (
     <div class="post">

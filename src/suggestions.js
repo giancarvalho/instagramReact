@@ -1,3 +1,4 @@
+//list with profile suggestion for current user
 const PROFILES = [
   { name: "bad.vibes.memes", image: "bad.vibes.memes.svg" },
   { name: "chibirdart", image: "chibirdart.svg" },
@@ -6,6 +7,7 @@ const PROFILES = [
   { name: "smallcutecats", image: "smallcutecats.svg" },
 ];
 
+//creates each suggestion
 function Suggestion(profile) {
   return (
     <div class="sugestao">
@@ -22,6 +24,7 @@ function Suggestion(profile) {
   );
 }
 
+//generates suggestions section -- desktop version only
 export default function Suggestions() {
   return <div>{PROFILES.map((profile) => Suggestion(profile))}</div>;
 }

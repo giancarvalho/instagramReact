@@ -1,9 +1,11 @@
+//current logged user
 const CURRENT_USER = {
   name: "cebolinha",
   image: "cebolinha.jpg",
   description: "Perfil Oficial",
 };
 
+//generates user profile in the sidemenu - desktop only
 export default function CurrrentUser() {
   return (
     <div class="usuario">

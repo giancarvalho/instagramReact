@@ -1,5 +1,5 @@
 import RenderPost from "./post";
-
+//posts to be rendered
 const POSTS = [
   {
     user: { name: "meowed", image: "meowed.svg" },
@@ -18,6 +18,7 @@ const POSTS = [
   },
 ];
 
+//generates all posts on the home page
 export default function Posts() {
   return <div class="posts">{POSTS.map((post) => RenderPost(post))}</div>;
 }

@@ -1,3 +1,4 @@
+// creates the main logo of the nav bar
 function Logo() {
   return (
     <div class="logo">
@@ -8,6 +9,7 @@ function Logo() {
   );
 }
 
+//creates the icons on the right side of the nav bar
 function Icons() {
   return (
     <div class="icones">
@@ -18,7 +20,7 @@ function Icons() {
     </div>
   );
 }
-
+// creates the main icon of the logo -- mobile version
 function LogoMobile() {
   return (
     <div class="logo-mobile">
@@ -26,7 +28,7 @@ function LogoMobile() {
     </div>
   );
 }
-
+// creates the logo -- mobile version
 function InstagramMobile() {
   return (
     <div class="instagram-mobile">
@@ -34,7 +36,7 @@ function InstagramMobile() {
     </div>
   );
 }
-
+// button on the right -- mobile version
 function IconsMobile() {
   return (
     <div class="icones-mobile">
@@ -43,6 +45,7 @@ function IconsMobile() {
   );
 }
 
+//generates nav bar
 export default function Navbar() {
   return (
     <div class="navbar">
