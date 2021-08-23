@@ -10,7 +10,6 @@ let PERFIL_STORIES = [
   { name: "meowed", image: `meowed.svg` },
 ];
 
-//render each story
 function renderStory(perfil) {
   return (
     <div class="story">
@@ -22,7 +21,6 @@ function renderStory(perfil) {
   );
 }
 
-//generates stories section
 export default function Stories() {
   return (
     <div class="stories">

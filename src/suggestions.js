@@ -7,7 +7,6 @@ const PROFILES = [
   { name: "smallcutecats", image: "smallcutecats.svg" },
 ];
 
-//creates each suggestion
 function Suggestion(profile) {
   return (
     <div class="sugestao">

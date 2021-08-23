@@ -45,7 +45,6 @@ function IconsMobile() {
   );
 }
 
-//generates nav bar
 export default function Navbar() {
   return (
     <div class="navbar">

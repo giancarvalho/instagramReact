@@ -1,4 +1,3 @@
-//creates the topbar part of post
 function Top(props) {
   return (
     <div class="topo">
@@ -13,7 +12,6 @@ function Top(props) {
   );
 }
 
-//creates the content of post
 function Content(props) {
   return (
     <div class="conteudo">
@@ -22,7 +20,6 @@ function Content(props) {
   );
 }
 
-//creates bottom part of post
 function Bottom(props) {
   return (
     <div class="fundo">
@@ -36,13 +33,12 @@ function Bottom(props) {
           <ion-icon name="bookmark-outline"></ion-icon>
         </div>
       </div>
-      <Likes likes={props.likes} />
+      <LikedBy likes={props.likes} />
     </div>
   );
 }
 
-//creates the likes section - who and how many liked the post
-function Likes(props) {
+function LikedBy(props) {
   return (
     <div class="curtidas">
       <img src={`assets/img/${props.likes.image}`} />
@@ -54,7 +50,6 @@ function Likes(props) {
   );
 }
 
-//render each post on homepage
 export default function RenderPost(post) {
   return (
     <div class="post">

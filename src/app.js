@@ -1,7 +1,7 @@
 import Navbar from "./navbar";
 import Content from "./content";
 
-// renders the page
+// renders the homepage
 export default function App() {
   return (
     <div class="website">

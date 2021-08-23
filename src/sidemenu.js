@@ -1,6 +1,13 @@
 import CurrrentUser from "./user";
 import Suggestions from "./suggestions";
 
+//current logged user
+const CURRENT_USER = {
+  name: "cebolinha",
+  image: "cebolinha.jpg",
+  description: "Perfil Oficial",
+};
+
 //creates the links to information about Instagram
 function Links() {
   return (
@@ -11,7 +18,6 @@ function Links() {
   );
 }
 
-//creates copyright notice
 function Copyright() {
   return <div class="copyright">© 2021 INSTAGRAM DO FACEBOOK</div>;
 }
@@ -20,7 +26,7 @@ function Copyright() {
 export default function Sidemenu() {
   return (
     <div class="sidebar">
-      <CurrrentUser />
+      <CurrrentUser user={CURRENT_USER} />
 
       <div class="sugestoes">
         <div class="titulo">
